@@ -3,7 +3,7 @@ import feedparser
 import time
 
 BOT_TOKEN = "8678049736:AAFVArcwOGYwFq76G8GgLXKT1EcXo9zYeIU"
-CHANNEL_USERNAME = "@TribesTamil"
+CHANNEL_USERNAME = "@tribestamil"
 YOUTUBE_CHANNEL_ID = "UCe4Xx2aBYBTncbWnmw5mg6A"
 
 RSS_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={YOUTUBE_CHANNEL_ID}"
@@ -27,6 +27,11 @@ while True:
         video_id = latest.yt_videoid
         title = latest.title
         link = latest.link
+
+        # 🚫 Skip Shorts
+        if "/shorts/" in link:
+            time.sleep(600)
+            continue
 
         if video_id != last_video_id:
             message = f"🎬 <b>{title}</b>\n\nWatch here:\n{link}"
