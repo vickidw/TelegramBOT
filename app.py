@@ -6,7 +6,7 @@ BOT_TOKEN = "8678049736:AAFVArcwOGYwFq76G8GgLXKT1EcXo9zYeIU"
 CHANNEL_USERNAME = "@TribesTamil"
 YOUTUBE_CHANNEL_ID = "UCe4Xx2aBYBTncbWnmw5mg6A"
 
-RSS_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={UCe4Xx2aBYBTncbWnmw5mg6A}"
+RSS_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={YOUTUBE_CHANNEL_ID}"
 
 last_video_id = None
 
