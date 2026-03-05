@@ -3,7 +3,7 @@ import feedparser
 import time
 
 BOT_TOKEN = "8678049736:AAFVArcwOGYwFq76G8GgLXKT1EcXo9zYeIU"
-CHANNEL_USERNAME = "@tribestamil"
+CHANNEL_USERNAME = "@TribesTamil"
 YOUTUBE_CHANNEL_ID = "UCe4Xx2aBYBTncbWnmw5mg6A"
 
 RSS_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={UCe4Xx2aBYBTncbWnmw5mg6A}"
@@ -11,7 +11,7 @@ RSS_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={UCe4Xx2aBYBTncb
 last_video_id = None
 
 def send_telegram_message(text):
-    url = f"https://api.telegram.org/bot{8678049736:AAFVArcwOGYwFq76G8GgLXKT1EcXo9zYeIU}/sendMessage"
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     data = {
         "chat_id": CHANNEL_USERNAME,
         "text": text,
